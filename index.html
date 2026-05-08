@@ -1,48 +1,68 @@
-<!DOCTYPE html><!--This is a basic HTML5 document.-->
-<html lang="en"><!--The lang attribute specifies the language of the page.  -->
-<head><!--The head element contains meta information about the document.-->
-    <meta charset="UTF-8"><!--The meta charset attribute specifies the character encoding for the HTML document.-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--The meta tag sets the viewport attributes for responsive design.-->
-    <title>Welcome Page</title><!--The title element specifies the title of the document, which is displayed in the browser's title bar or tab.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+       <link rel="stylesheet" href="style.css">
 </head>
-<body></body><!--The body element contains the visible content of the HTML document.-->
-<a href="about.html">Go to About Page</a><!--The a element defines a hyperlink, and the href attribute specifies the URL of the page the link goes to.-->   
-<a href="projects.html">Projects Page</a>
-<a href="index.html">Home Page</a>
-<a href="contacts.html">Contacts Page</a>
+<body>
+    <div class="topnav">
+        <a href="./">Home</a>  
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="products.html">Our Products</a>
+        <a href="contacts.html">Contact Us</a>
+    </div>
+    <div class="banner">
+        <h1>Welcome to Our Website</h1>
+    </div>
+    <div class="row">
+        <div class="content">
+                <h2>Welcome</h2>
+    <p> This page is an explanation of the different types of programming languages
+    </p>
+    <p>It includes a list of popular programming languages and their characteristics.</p>
 
-<h1>Welcome to My Website!</h1><!--The h1 element defines a top-level heading.--> 
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-<p style="color:white; font-style: italic; background-color: #302ec2; padding: 10px;">There was something special about this little creature.
-     Donna couldn't quite pinpoint what it was, but she knew with all her heart that it was true.
-     <br>
-      It wasn't a matter of if she was going to try and save it, but a matter of how she was going to save it.
-       She went back to the car to get a blanket and when she returned the creature was gone.</p>
-<ul ><!--The ul element defines an unordered list, and the type attribute specifies the bullet style.-->
-    <li>C++</li><!--The li element defines a list item.-->
-    <li>Python</li>
-    <li>JavaScript</li>
-</ul>
+        <ul type="circle">
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+        </ul>
 
-<ol type="a" start ="15"><!--The ol element defines an ordered list, and the type attribute specifies the numbering style.-->
-    <li>C++</li>
-    <li>Python</li>
-    <li>JavaScript</li>
-</ol>
+        <ol type="a" start="15">
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+        </ol>
 
-<dl><!--The dl element defines a description list.-->
-    <dt>C++</dt><!--The dt element defines a term in a description list.-->
-    <dd>A high-level programming language used for system/software development.</dd><!--The dd element provides the description or definition of the term.-->
-    
-    <dt>Python</dt>
-    <dd>A versatile programming language known for its readability and wide range of applications.</dd>
-    
-    <dt>JavaScript</dt>
-    <dd>A scripting language commonly used to create interactive effects within web browsers.</dd>
-</dl>
+        <dl>
+            <dt>C++</dt>
+            <dd>A general-purpose programming language.</dd>
+            <dt>Python</dt>
+            <dd>A high-level, interpreted programming language.</dd>
+            <dt>Java</dt>
+            <dd>A class-based, object-oriented programming language.</dd>
+            <dt>JavaScript</dt>
+            <dd>A versatile scripting language primarily used for web development.</dd>
+            <dt>HTML</dt>
+            <dd>The standard markup language for creating web pages.</dd>
+        </dl>
+</div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>    
+            <p>Fun Fact!</p>
+            <p>Python was named after the British comedy group Monty Python.</p>
+            <p>C++ was developed by Bjarne Stroustrup.</p>
+            <p>JavaScript was created by Brendan Eich.</p>
+        </div>
+    </div>
+    <div class="footer">
+        &#169; 2026 BICS D. All rights reserved.
+    </div>
 </body>
 </html>
