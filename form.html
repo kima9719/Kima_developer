@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .cf-wrap {
+      width: 100%;
+      max-width: 500px;
+      background: #ffffff;
+      border: 1px solid #e0ddd6;
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+    }
+
+    .cf-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #e0ddd6;
+    }
+
+    .cf-icon-wrap {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #e6f1fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cf-icon-wrap i {
+      font-size: 20px;
+      color: #185fa5;
+    }
+
+    .cf-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .cf-subtitle {
+      font-size: 13px;
+      color: #888780;
+      margin-top: 2px;
+    }
+
+    .cf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .cf-row {
+      margin-bottom: 1rem;
+    }
+
+    .cf-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #888780;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .cf-label i {
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 9px 12px;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #fafaf8;
+      border: 1px solid #d3d1c7;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      font-family: Arial, sans-serif;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #b4b2a9;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #378add;
+      box-shadow: 0 0 0 3px rgba(55, 138, 221, 0.12);
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 110px;
+      line-height: 1.6;
+    }
+
+    .cf-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #e0ddd6;
+    }
+
+    .cf-hint {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #b4b2a9;
+    }
+
+    .cf-hint i {
+      font-size: 14px;
+    }
+
+    .cf-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #1a1a1a;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      font-family: Arial, sans-serif;
+    }
+
+    .cf-btn i {
+      font-size: 16px;
+    }
+
+    .cf-btn:hover {
+      background: #333;
+    }
+
+    .cf-btn:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cf-wrap">
+    <div class="cf-header">
+      <div class="cf-icon-wrap">
+        <i class="ti ti-send"></i>
+      </div>
+      <div>
+        <p class="cf-title">Get in touch</p>
+        <p class="cf-subtitle">We'll get back to you within 24 hours</p>
+      </div>
+    </div>
+
+    <form>
+      <div class="cf-grid">
+        <div class="cf-row" style="margin-bottom:0">
+          <div class="cf-label"><i class="ti ti-user"></i> Full name</div>
+          <input type="text" placeholder="Jane Smith">
+        </div>
+        <div class="cf-row" style="margin-bottom:0">
+          <div class="cf-label"><i class="ti ti-phone"></i> Phone</div>
+          <input type="tel" placeholder="+254 700 000 000">
+        </div>
+      </div>
+
+      <div class="cf-row" style="margin-top:1rem">
+        <div class="cf-label"><i class="ti ti-mail"></i> Email address</div>
+        <input type="email" placeholder="jane@example.com">
+      </div>
+
+      <div class="cf-row">
+        <div class="cf-label"><i class="ti ti-tag"></i> Subject</div>
+        <input type="text" placeholder="What's this about?">
+      </div>
+
+      <div class="cf-row">
+        <div class="cf-label"><i class="ti ti-message"></i> Message</div>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+
+      <div class="cf-actions">
+        <span class="cf-hint"><i class="ti ti-lock"></i> Your data is private</span>
+        <button type="submit" class="cf-btn">
+          <i class="ti ti-send"></i> Send message
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
